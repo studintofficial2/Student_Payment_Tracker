@@ -1,0 +1,17 @@
+html,body{margin:0;padding:0;background:#0a0a0c;overflow:hidden;height:100%;width:100%;}
+  .stage-frame{position:fixed;inset:0;width:100%;height:100%;border:0;display:block;}
+  #stageIntro{z-index:30;}
+  #stageLogin{z-index:20;display:none;}
+  #stageGate{z-index:25;display:none;}
+
+  #loadingOverlay{
+    position:fixed;inset:0;z-index:100;
+    background:#0a0a0c;
+    display:flex;align-items:center;justify-content:center;
+  }
+  #loadingOverlay img{
+    width:44px;height:auto;
+    animation:spin 1s linear infinite;
+  }
+  @keyframes spin{ from{transform:rotate(0deg);} to{transform:rotate(360deg);} }
+  #loadingOverlay.hide{ display:none; }
